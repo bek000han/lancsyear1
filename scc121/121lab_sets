@@ -1,0 +1,65 @@
+1.
+a. equal
+b. not equal
+
+2.
+a. {3}
+b. {1, 2, 3, 4, 5, 6, 0}
+c. {1, 2, 4, 5}
+d. {0, 6}
+
+3. 
+a. {4, 6}
+b. {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+c. {4, 5, 6, 8, 10}
+d. {0, 2, 4, 6, 5, 7, 8, 9, 10}
+
+4. 
+a. {1, 2, 3, a}
+b. {a}
+c. {b}
+d. { }
+e. {a}
+f. {1, 2, 3, 4, 5, a}
+g. {1, 2, 3, a}
+
+5.
+a. Students who are within a mile and also walk to school.
+b. Students who are within a mile or walk to school.
+c. Students who are within a mile but do not walk to school.
+d. Students who walk to school but are not within a mile.
+
+6.
+a. {(a, y),(a, z),(b, y),(b, z),(c, y),(c, z)}
+b. {(y, a),(z, a),(y, b),(z, b),(y, c),(z, c)}
+
+7. m * n number of elements.
+
+8. 
+a. 11
+b. 9
+
+9.
+a. True
+b. False
+
+10. {1, }, {1, }
+
+11. 
+a. Proper subset
+b. Not a subset
+c. Proper subset
+d. Proper subset
+
+12. 
+a. Subset
+b. Not a subset
+c. Not a subset
+d. Not a subset
+
+13. 
+a. True
+b. False
+c. True
+
+
