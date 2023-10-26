@@ -24,9 +24,7 @@ int main()
 
 int calc()
 {
-    int first;
-    int second;
-    int oprt;
+    int first, second, oprt;
     printf("Enter first number: \n");
     scanf("%d", &first);
     printf("Enter second number: \n");
