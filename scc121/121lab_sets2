@@ -1,0 +1,43 @@
+1. in notebook
+
+2. R3 is reflexive
+the other relations are not reflexive because they dont contain an <a,a>
+for every A.
+
+3. R3 is symmetric
+the other relations are not symmetric because they dont contain an <b,a>
+for every <a,b>
+
+4. R4, R2 are transitive
+the other relations are not transitive because they dont contain an <a,c>
+for every <a,b> and <b,c>
+
+5. 
+a. {<1,1>, <1,2>, <1,3>, <2,2>, <2,3>, <3,3>}
+b. {<1,2>, <2,2>, <2,4>, <3,1>, <3,5>, <4,5>, <5,2>}
+
+6.
+a. union = {<Ann,22>, <Mary,23>, <Laura,20>, <John,19>, <Mike,24>,
+	    <James,21>}
+b. intersection = {<Mary,23>, <Laura,20>}
+c. difference = {<Ann,22>}
+
+7. R = {<eggs, hens>, <milk, cows>, <milk, goats>}
+
+8. 
+a. >: transitive
+b. <: transitive
+c. =: reflexive, symmetric, transitive
+d. >=: reflexive, transitive
+e. <=: reflexive, transitive
+
+9. 
+a. reflexive: R2
+b. symmetric: R2, R3
+c. transitive: R1, R2
+
+10.
+a. not reflexive
+b. symmetric
+c. not irreflexive
+d. transitive
