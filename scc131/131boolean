@@ -1,0 +1,55 @@
+1.
+a. A + B
+b. A'
+c. (A + B)'
+d. BA'
+
+2.
+a. 1
+b. A
+c. A'
+d. 1(A' + B)
+
+3.
+a. A+B
+a b x
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+b. A'+B'
+a b x
+0 0 1
+0 1 1
+1 0 1
+1 1 0
+
+c. A + A'
+a a x
+0 0 1
+1 1 1
+
+d. A'B'
+a b x
+0 0 1
+0 1 0
+1 0 0
+1 1 0
+
+4.
+a. A+B
+b. AB(C + C') + AB'(C + C') + A'BC + A'B'C
+   AB + AB' + A'BC + A'B'C'
+   AB + AB' + A'(BC + B'C')
+   AB + AB' + A'
+   A(B + B') + A'
+   A + A'
+   1
+
+5. 
+a. A+B
+b. C+C'
+c. ABD' + A'BD + AB'D' + A'B'D
+ 
+
