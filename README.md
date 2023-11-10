@@ -16,6 +16,6 @@ The final grades for modules:
 * Fundamentals of Computer Science:
 * Digital Systems & Architecture:
 * Computing Professionalism:
-<br>
 
+<br>
 Skills gained:
