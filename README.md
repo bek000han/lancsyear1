@@ -17,5 +17,5 @@ The final grades for modules:
 * Digital Systems & Architecture:
 * Computing Professionalism:
 
-<br>
+<br/>
 Skills gained:
