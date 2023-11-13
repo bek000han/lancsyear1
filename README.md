@@ -9,7 +9,7 @@ This course archive has 4 separate folders for the compulsory modules, which inc
 * Fundamentals of Computer Science
 * Digital Systems & Architecture
 * Computing Professionalism
-<br>
+
 The course content and exercises were developed by and courtesy of the School of Computing at Lancaster University.
 The final grades for modules:
 - Software Development:
