@@ -1,0 +1,96 @@
+1.
+a. if logic is easy then coursework is done and if it is weekend 
+then swimming is fun.
+b. (W AND C) -> (L OR S)
+
+2.
+a. P'
+b. T AND S
+c. Q OR Q'
+d. (P -> S')'
+e. T'
+
+3.
+a. (Q OR T)'
+b. S AND Q'
+c. (Q AND P) -> T
+d. S'
+
+4.
+a. If the cheesecake is not good and the fries are greasy
+   then the wings are spicy.
+b. It is not the case that the cheesecake is good or the wings are spicy
+c. It is not the case that the wings are not spicy and the cheesecake
+   is good.
+d. It is not the case that the fries are not greasy.
+
+5.
+a. 
+a b x
+0 0 0
+0 1 1
+1 0 1
+1 1 1   
+
+a b x
+0 0 0
+0 1 1
+1 0 1
+1 1 0
+b. xor has to be have exactly 1 input on and other off. not both.
+c. A XOR B, I either jog or sprint but not both.
+
+6.
+a. 
+a b x
+0 0 1
+0 1 0
+1 0 1
+1 1 1
+
+a b x
+0 0 1
+0 1 0
+1 0 0
+1 1 1
+b. biconditional is only if both inputs are the same
+c. A <-> B, he is going if and only if it is sunny
+
+7.
+a. 
+P F x
+0 0 0
+1 0 0
+b.
+P T x
+0 1 1
+1 1 1
+
+8. 
+P Q (P OR Q) x
+0 0 0        0
+0 1 1        0
+1 0 1        1 
+1 1 1        1
+
+9. idk what they mean exercise 2
+
+10. 
+A B (A OR B) (A AND B) x
+0 0    0         0     0
+0 1    1         0     1
+1 0    1         0     1
+1 1    1         1     1
+
+it is not a tautology
+
+
+
+
+
+
+
+
+
+
+
