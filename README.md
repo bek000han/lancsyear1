@@ -11,8 +11,4 @@ This course archive has 4 separate folders for the compulsory modules, which inc
 * Computing Professionalism
 
 The course content and exercises were developed by and courtesy of the School of Computing at Lancaster University.
-The final grades for modules:
-- Software Development:
-- Fundamentals of Computer Science:
-- Digital Systems & Architecture:
-- Computing Professionalism:
+The final grades for modules: 
