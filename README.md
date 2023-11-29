@@ -11,4 +11,7 @@ This course archive has 4 separate folders for the compulsory modules, which inc
 * Computing Professionalism
 
 The course content and exercises were developed by and courtesy of the School of Computing at Lancaster University.
-The final grades for modules: 
+The final grades:
+- Year 1
+- Year 2
+- Year 3
