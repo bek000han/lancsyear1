@@ -2,21 +2,17 @@
 #include <stdlib.h>
 
 int vowels_to_numbers(FILE *plain, FILE *cipher);
-
 int remove_vowels(FILE *plain, FILE *cipher);
-
 int caesar_cipher(FILE *plain, FILE *cipher);
+int fileNull(FILE *fpr);
 
 int main()
 {
     FILE *fpr = fopen("plain.txt", "r");
     FILE *fpw = fopen("cipher.txt", "w");
 
-    if (fpr == NULL)
-    {
-        printf("File doesn't exist");
-        return 0;
-    }
+    if (!fileNull(fpr))
+        return(0);
 
     printf("Which encryption algorithm to apply? (enter corresponding index)\n1: Vowels to numbers\n2: Remove all vowels\n3: Caesar cipher\nUser input: ");
     int functionIndex;
@@ -44,6 +40,15 @@ int main()
     fclose(fpr),(fpw);
 }
 
+int fileNull(FILE *fpr)
+{
+    if (fpr == NULL)
+    {
+        printf("File doesn't exist");
+        return 0;
+    }
+    return 1;
+}
 
 int vowels_to_numbers(FILE *plain, FILE *cipher)
 {
@@ -70,9 +75,9 @@ int vowels_to_numbers(FILE *plain, FILE *cipher)
             default:
                 break;
         }
-
         putc(c, cipher);
     }
+    return 1;
 }
 
 int remove_vowels(FILE *plain, FILE *cipher)
@@ -85,6 +90,7 @@ int remove_vowels(FILE *plain, FILE *cipher)
 
         putc(c, cipher);
     }
+    return 1;
 }
 
 int caesar_cipher(FILE *plain, FILE *cipher)
@@ -99,5 +105,6 @@ int caesar_cipher(FILE *plain, FILE *cipher)
 
         putc(c, cipher);
     }
+    return 1;
 }
 
