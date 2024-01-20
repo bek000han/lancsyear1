@@ -7,14 +7,14 @@ typedef struct element{
 }element;
 
 typedef struct list{
-    element *head;
+    element head;
 }list;
 
 void add(list list, element e){
-    e.next = list.head;
+    e.next = &list.head;
 
-    if (list.head != NULL){
-        list.head.prev = e;
+    if (list.head.data != NULL){
+        list.head.prev = &e;
     }
     list.head = e;
     e.prev = NULL;
@@ -22,7 +22,7 @@ void add(list list, element e){
 
 list createList(){
     list list;
-    list.head = NULL;
+    list.head.data = NULL;
     return list;
 }
 

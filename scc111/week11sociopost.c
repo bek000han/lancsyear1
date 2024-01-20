@@ -16,7 +16,7 @@ typedef struct element{
 }element;
 
 typedef struct list{
-    element *head;
+    element head;
 }list;
 
 char* getCurrentTime();
@@ -31,9 +31,9 @@ list createList();
 
 int main()
 {
-    list List = createList();
+    list list = createList();
     welcome();
-    menu(List);
+    menu(list);
 
     return 0;
 }
@@ -64,7 +64,7 @@ void menu(list list)
         postPost(list);
         break;
     case 2:
-        feed(list, list.head);
+        feed(list, &list.head);
         break;
     case 0:
         exit(0);
@@ -77,10 +77,16 @@ void menu(list list)
 int feed(list list, element *current)
 {
     printf("Current posts:\n");
-    if (&current == NULL){
+    if (!strcmp(current->data.content, "/t")){
         printf("\nNo posts exist in feed. Post something!\n");
     } else {
-        printf("\nPost: %s,", current->data.content);
+        printf("\nPost: %s, %s\n", current->data.content, current->data.timedate);
+    }
+
+    element e = list.head;
+    while (1){
+        printf("%s\n", e.data.content);
+        e = *e.next;
     }
 
     int action;
@@ -106,18 +112,18 @@ int feed(list list, element *current)
 }
 
 list createList(){
-    list *list = (struct list*)malloc(sizeof(list));
-    list->head = NULL;
-    return *list;
+    list list;
+    list.head.data.content = "/t";
+    return list;
 }
 
 void add(list list, element e){
-    e.next = list.head;
+    e.next = &list.head;
 
-    if (list.head != NULL){
-        list.head->prev = &e;
+    if (!strcmp(list.head.data.content, "/t")){
+        list.head.prev = &e;
     }
-    list.head = &e;
+    list.head = e;
     e.prev = NULL;
 }
 
@@ -125,16 +131,22 @@ int postPost(list list)
 {
     char *messageContent;
     printf("\nMessage Content: ");
-    scanf("%s", messageContent);
+    scanf("%s", &messageContent);
+    printf("sending it1\n");
 
     element e;
     Post p;
+    printf("sending it2\n");
     p.content = messageContent;
+    printf("sending it3\n");
     p.timedate = getCurrentTime();
+    printf("sending it4\n");
     e.data = p;
+    printf("sending it5\n");
     add(list, e);
 
-    printf("Successfully Posted Message!");
+    printf("Successfully Posted Message!\n");
+    menu(list);
 }
 
 int likePost()
