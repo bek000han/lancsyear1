@@ -8,7 +8,7 @@ This course archive has 4 separate folders for the compulsory modules, which inc
 * Software Development
 * Fundamentals of Computer Science
 * Digital Systems Architecture
-* Computing Professionalism & Ethics
+* Computing Professionalism & Ethics 
 
 The course content and exercises are courtesy of the School of Computing & Communications at Lancaster University.
 
