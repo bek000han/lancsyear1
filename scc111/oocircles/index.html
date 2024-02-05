@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Display</title>
+      <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            background-color: #000; /* Set canvas background to dark */
+            display: block;
+            margin: auto;
+            border: none; /* Remove canvas border */
+        }
+    </style>
+</head>
+<body>
+<canvas id="circleCanvas" width="800" height="600"></canvas>
+<script>
+    let circlesData = [];
+    let updateInterval;
+    const sampleJsonData = [{ "x": 400, "y": 400, "radius": 40, "color": "purple"}, 
+    { "x": 500, "y": 500, "radius": 25, "color": "orange"}];
+
+            
+    function drawCircles(circles) {
+        const canvas = document.getElementById('circleCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        circles.forEach(circle => {
+            ctx.beginPath();
+            ctx.arc(circle.parameters.x, circle.parameters.y, circle.parameters.radius, 0, 2 * Math.PI);
+            ctx.fillStyle = circle.parameters.color;
+            ctx.fill();
+            // Remove stroke for no outlines
+            // ctx.stroke();
+        });
+        requestAnimationFrame(() => drawCircles(circles));
+    }
+
+   function handleFileInput(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                circlesData = JSON.parse(e.target.result);
+                drawCircles(circlesData);
+            };
+            reader.readAsText(file);
+        }
+    }
+
+   function updateJSON() {
+        const url = `http://localhost:8000/circles.json?timestamp=${new Date().getTime()}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                circlesData = data.filter(obj => obj.shape === "circle");
+                drawCircles(circlesData);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    }
+    function startUpdating() {
+        updateJSON();
+        updateInterval = setInterval(updateJSON, 100); // Set interval for updates every 20 ms
+    }
+   function stopUpdating() {
+        clearInterval(updateInterval);
+    }
+    //updateJSON();
+    startUpdating();
+</script>
+</body>
+</html>
