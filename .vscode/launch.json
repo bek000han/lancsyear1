@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Sample",
+      "request": "launch",
+      "mainClass": "GameArena.Sample",
+      "projectName": "lancsyear1-1_524f06a1"
+    },
+    {
+      "type": "java",
+      "name": "Sample",
+      "request": "launch",
+      "mainClass": "scc111.GameArena.Sample",
+      "projectName": "lancsyear1-1_524f06a1"
+    },
+    {
+      "type": "java",
       "name": "Driver",
       "request": "launch",
       "mainClass": "scc111.DiceJava.Driver",

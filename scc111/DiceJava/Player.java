@@ -1,4 +1,4 @@
-package scc111.DiceJava;
+package DiceJava;
 import java.util.Scanner;
 
 public class Player {

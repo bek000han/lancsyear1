@@ -1,4 +1,4 @@
-package scc111.DiceJava;
+package DiceJava;
 
 
 public class Driver {
