@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Driver",
+      "request": "launch",
+      "mainClass": "scc111.DiceJava.Driver",
+      "projectName": "lancsyear1-1_524f06a1"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
