@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Random;
 
 public class SelectionSort {
-
+/*WRONG WRONG WRONG */
     public void sort(List<Integer> arr){
         int temp;
         for (int i = 0; i < arr.size() - 1; i++) {
