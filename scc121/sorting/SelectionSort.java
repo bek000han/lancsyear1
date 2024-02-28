@@ -1,30 +1,27 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 public class SelectionSort {
-/*WRONG WRONG WRONG */
-    public void sort(List<Integer> arr){
-        int temp;
-        for (int i = 0; i < arr.size() - 1; i++) {
-            for (int j = i + 1; j < arr.size(); j++) {
-                if (arr.get(i) < arr.get(j)){
-                    temp = arr.get(i);
-                    arr.set(i, j);
-                    arr.set(j, temp);
-                }
-            }
+    public static void main(String[] args) {
+        int [] arr = {5,7,1,9,2,3,4,8,0,6};
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.err.println("\nsorted:");
+        selectionSort(arr);
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 
-    public List<Integer> createList(int len){
-        List<Integer> list = new ArrayList<Integer>();
-        Random rand = new Random();
-
-        for (int i = 0; i < len; i++) {
-            list.add(rand.nextInt(20));
+    private static void selectionSort(int[] arr){
+        for (int i = 0; i < arr.length - 1; i++){
+            int min = i;
+            for (int j = i + 1; j < arr.length; j++){
+                if (arr[min] > arr[j]){
+                    min = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
         }
-
-        return list;
     }
 }
