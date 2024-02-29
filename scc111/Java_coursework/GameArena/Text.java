@@ -1,4 +1,4 @@
-package GameArena;
+package Java_coursework.GameArena;
 
 /**
  * Models a simple piece of text. 

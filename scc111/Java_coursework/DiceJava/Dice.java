@@ -1,4 +1,4 @@
-package scc111.DiceJava;
+package Java_coursework.DiceJava;
 
 public class Dice {
     private int numsides;

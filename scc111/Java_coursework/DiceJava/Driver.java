@@ -1,4 +1,4 @@
-package DiceJava;
+package Java_coursework.DiceJava;
 
 
 public class Driver {

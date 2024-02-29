@@ -1,5 +1,6 @@
+package Java_coursework;
 import javax.swing.*;
-public class Main {
+public class SwingTest {
     public static void main(String[] args)
     {
         System.out.println("Hello world!");

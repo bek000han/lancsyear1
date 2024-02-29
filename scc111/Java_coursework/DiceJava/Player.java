@@ -1,4 +1,4 @@
-package DiceJava;
+package Java_coursework.DiceJava;
 import java.util.Scanner;
 
 public class Player {

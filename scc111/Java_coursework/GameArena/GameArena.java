@@ -1,4 +1,4 @@
-package GameArena;
+package Java_coursework.GameArena;
 
 import javax.swing.*;
 import java.awt.*;

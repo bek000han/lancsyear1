@@ -1,4 +1,4 @@
-package GameArena;
+package Java_coursework.GameArena;
 
 import java.util.ArrayList;
 import java.util.List;
