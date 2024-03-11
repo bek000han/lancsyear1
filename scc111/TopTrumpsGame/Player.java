@@ -2,11 +2,13 @@ public class Player {
     private String playerName;
     private Card[] hand;
     private Card currentCard;
+    private int currentCardIndex;
 
     public Player(String n, int numberOfCards) {
         this.playerName = n;
         this.hand = new Card[numberOfCards];
         this.currentCard = null;
+        this.currentCardIndex = 0;
     }
 
     public String getPlayerName(){
@@ -24,36 +26,42 @@ public class Player {
     }
 
     public void addCard(Card cardToAdd){
-        for (int i = 0; i < hand.length - 1; i++) {
-            if (this.hand[i] == null) {
-                this.hand[i] = cardToAdd;
+        for (int i = 0; i < hand.length; i++) {
+            if (hand[i] == null) {
+                hand[i] = cardToAdd;
+                return;
             }
         }
     }
 
     public void removeCard(Card cardToRemove){
-        for (Card card : hand) {
-            if (card.equals(cardToRemove)){
-                card = null;
+        for (int i = 0; i < hand.length; i++) {
+            if (hand[i] == cardToRemove){
+                hand[i] = null;
+                return;
             }
         }
     }
 
     public void nextCard(){
         if (currentCard == null) {
-            currentCard = this.hand[0];
+            currentCard = hand[0];
         } else {
-            while(true){
-                int index = 0;
-                if (this.hand[index] == currentCard || this.hand[index] == null){
+            int index = currentCardIndex + 1;
+            boolean not_found = true;
+            while(not_found){
+                if(hand[index] == null){
                     index++;
-                    if (index > this.hand.length - 1){
+                    if (index > hand.length - 1){
                         index = 0;
                     }
                 } else {
-                    currentCard = this.hand[index];
+                    not_found = false;
                 }
             }
+            currentCard = hand[index];
+            currentCardIndex = index;
+            return;
         }
     }
 

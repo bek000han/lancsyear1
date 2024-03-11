@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TopTrumps",
+      "request": "launch",
+      "mainClass": "TopTrumps",
+      "projectName": "lancsyear1_97b161a4"
+    },
+    {
+      "type": "java",
       "name": "BubbleSort",
       "request": "launch",
       "mainClass": "BubbleSort",
