@@ -12,8 +12,10 @@ public class MergeSort {
     }
 
     private static void mergeSort(int[] arr){
-
+        
     }
 
-    private 
+    private static void merge(int[] mainArr, int[] leftArr, int[] rightArr){
+
+    }
 }
