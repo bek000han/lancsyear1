@@ -14,7 +14,6 @@ public class InsertionSort {
     private static void insertionSort(int[] arr){
         int temp;
         int j;
-        int k;
         for (int i = 1; i < arr.length; i++) {
             temp = arr[i];
             j = i - 1;
