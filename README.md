@@ -1,4 +1,4 @@
-# 1st Year BSc. CompSci Archive
+# 1st Year BSc. CompSci archive
 
 Lab and writing note material from the first year of the Computer Science course at Lancaster University.
 This private repository is for archiving purposes and is to be viewed by only me, no plagiarism rules will be breached.
