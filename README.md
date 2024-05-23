@@ -12,4 +12,5 @@ This course archive has 4 separate folders for the compulsory modules, which inc
 
 Course content & exercises are courtesy of the School of Computing & Communications at Lancaster University.
 
-The final grade for Year 1:
+The final grades for Year 1:
+
