@@ -7,7 +7,7 @@ This private repository is for archiving purposes and is to be viewed by only me
 This course archive has 4 separate folders for the compulsory modules, which include:
 * Software Development
 * Fundamentals of Computer Science
-* Digital Systems Architecture
+* Introduction to Computer Systems
 * Computing Professionalism & Ethics 
 
 Course content & exercises are courtesy of the School of Computing & Communications at Lancaster University.
